@@ -1,0 +1,6 @@
+SELECT * FROM healthy.newsletter;CREATE DATABASE `healthy` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE TABLE `newsletter` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
