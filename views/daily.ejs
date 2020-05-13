@@ -1,0 +1,16 @@
+<h1>Daily recipe</h1>
+
+<br>
+<div class="row">
+    <div class="col">
+        <h2><%= data.recipes[0].title %></h2>
+        <p><%- data.recipes[0].summary %></p>
+    </div>
+    <div class="col">
+        <img src="<%= data.recipes[0].image %>" class="rounded float-lef">
+    </div>
+</div>
+</>
+
+<h3>Instructions</h3>
+<p><%- data.recipes[0].instructions %></p>

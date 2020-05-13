@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <br>
+            <h1>BMI Calculator</h1>
+            <br>
+            <%if (err){%>
+            <div class="alert alert-danger" role="alert">
+                <%= err %>
+            </div>
+            <% } %>
+            <form method="POST" action="/bmi">
+                <div class="form-group">
+                    <label for="height">Height</label>
+                    <input class="form-control" name="height" type="text" placeholder="Height in feet">
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight</label>
+                    <input class="form-control" name="weight" type="text" placeholder="Weight in pounds">
+                </div>
+                <input type="submit" value="Calculate" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <% if(bmi) {%>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <p>Your BMI is <strong><%= bmi %></strong>
+            </p>
+        </div>
+    </div>
+    <% } %>

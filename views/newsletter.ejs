@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <br>
+            <div class="thumbnail center well well-small text-center">
+                <h1>Newsletter</h1>
+                <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+                <%if (err){%>
+                <div class="alert alert-danger" role="alert">
+                    <%= err %>
+                </div>
+                <% } %>
+                <form method="POST" action="/newsletter/submit">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        </div>
+                        <input class="form-control" name="email" type="text" placeholder="your@email.com">
+                    </div>
+                    <br />
+                    <div>
+                        <input id="submit" type="submit" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

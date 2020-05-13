@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Healthy Bytes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Healthy Bytes</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link <% if(page_name=='home') {%> active <%}%>" href="/">Home </a>
+                </li>
+                <li class="nav-item <% if(page_name=='daily') {%> active <%}%>">
+                    <a class="nav-link" href="/daily">Daily Recipe</a>
+                </li>
+                <li class="nav-item <% if(page_name=='superfood') {%> active <%}%>">
+                    <a class="nav-link" href="/superfood">Super Food</a>
+                </li>
+                <li class="nav-item <% if(page_name==='bmi') {%> active <%}%>">
+                    <a class="nav-link " href="/bmi">BMI </a>
+                </li>
+                <li class="nav-item <% if(page_name=='newsletter') {%> active <%}%>" >
+                    <a class="nav-link" href="/newsletter">Newsletter</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <%- body %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</body>
+
+</html>
